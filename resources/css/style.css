@@ -1,0 +1,235 @@
+html{
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container{
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Nav Section */
+.headline{
+  height: 4rem;
+  background-color: rgb(30, 90, 142);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 0.25rem 1.5rem;
+  width: 100%;
+}
+.headline .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Signika', sans-serif;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  height: 3.5rem;
+  width: auto;
+}
+
+.logo span{
+  font-size: 2.5rem;
+}
+.logo-colmar span:first-child{
+  color: rgb(255,255,255);
+}
+.logo-colmar span{
+  color: rgba(255,255,255, 0.3);
+}
+.logo-colmar a{
+  text-decoration: none;
+}
+ .navigation{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation li{
+  display: inline;
+  margin-left: 1rem;
+}
+.navigation a{
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-size: 1.25rem;
+  transition: background-color 400ms linear, color 400ms linear;
+}
+.navigation a:hover{
+  background-color: #8396A5;
+  color:rgb(30, 90, 142);
+  border-radius: 0.20rem;
+}
+.mobile{
+  display: none;
+}
+/* Media Query Nav Mobile*/
+@media only screen and (max-width: 470px){
+  .headline{
+    width: 100%;
+    background-color: rgb(30, 90, 142);
+    padding: 0 1.5rem;
+  }
+  .mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo, .logo-colmar, .navigation{
+    display: none;
+  }
+}
+/*Banner Section */
+.banner{
+  padding: 2rem 1.5rem;
+  background-color: rgb(242, 245, 243);
+  display: block;
+  position: relative;
+  top: 4rem;
+}
+
+.banner .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.imgbanner{
+  height: auto;
+  width: 60%;
+
+}
+.description{
+  line-height: 1.4;
+  margin-left: 1.5rem;
+  font-family: 'Signika Negative', sans-serif;
+
+}
+
+.description h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba( 242, 183, 5, 0.5);
+  margin-bottom: 2rem;
+}
+
+.description h3{
+  font-size: 2rem;
+  font-weight: lighter;
+  color: rgba( 242, 183, 5, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.description button{
+  background-color: rgb(30, 90, 142);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  transition: backgroud-color 500ms ease-in, font-size 200ms ease-in, border-radius 200ms linear;
+  transition: backgroud-color 500ms ease-in, font-size 200ms ease-in, border-radius 200ms linear, border 100ms ease-out;
+}
+/*Animation when the user hover with the mouse */
+.description button:hover{
+  background-color: #8396A5;
+  font-size: 1.75rem;
+  border-radius: 0.20rem;
+}
+/*Animation when the user click with the mouse*/
+.description button:active{
+  background-color: rgba( 242, 183, 5, 0.5);
+  font-size: 1.75rem;
+  border-radius: 0.20rem;
+  border: 0.5px solid rgb(30, 90, 142);
+}
+/*Media Query for Banner Section Mobile */
+@media only screen and (max-width: 470px){
+  .banner{
+    padding: 0;
+  }
+  .banner .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+  .imgbanner img{
+    width: auto;
+    height: auto;
+    max-width:100%;
+  }
+}
+
+/*Main Section */
+main{
+  margin-top: 4rem;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.infomain{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.infomain img{
+  max-width: 100%;
+  height: auto;
+}
+
+.infomain h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba( 242, 183, 5, 0.5);
+  margin-bottom: 2rem;
+}
+
+
+.facilities{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.infocard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infocard img{
+  width:35%;
+  height: auto;
+}
+
+.infodescription{
+  width: 65%;
+  height: auto;
+}
