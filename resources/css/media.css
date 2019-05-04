@@ -34,7 +34,7 @@
   }
   .icons{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .icons img{
     height: 2.5rem;
@@ -83,7 +83,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 2rem 1rem;
     margin-top: 4rem;
   }
   .infocard{
@@ -91,7 +90,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
+    padding: 0 1rem;
   }
   .infocard:last-child{
     display: flex;
