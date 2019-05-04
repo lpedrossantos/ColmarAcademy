@@ -92,7 +92,7 @@ h2,h3,p,a{
   transition: background-color 400ms linear, color 400ms linear;
 }
 .navigation a:hover{
-  background-color: #8396A5;
+  background-color: rgba(242, 245, 243, 0.8);
   color:rgb(30, 90, 142);
   border-radius: 0.20rem;
 }
@@ -144,25 +144,6 @@ h2,h3,p,a{
   background-color: rgba(12, 29, 64, 0.9);
   font-size: 1.75rem;
   border-radius: 0.20rem;
-}
-/*Media Query for Banner Section Mobile */
-@media only screen and (max-width: 470px){
-  .banner{
-    padding: 0;
-  }
-  .banner .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-  }
-  .imgbanner img{
-    width: auto;
-    height: auto;
-    max-width:100%;
-  }
 }
 
 /*Main Section */
@@ -234,7 +215,7 @@ main{
 /* Animation for the info cards */
 .infocard:hover{
   background-color: rgb(30, 90, 142);
-  flex-grow: 2;
+  transform: translateY(5px);
 }
 .infodescription a:hover{
   text-decoration: underline;
@@ -251,7 +232,7 @@ main{
 
 .infocard:hover:last-child{
   background-color: rgba( 242, 183, 5, 0.85);
-  flex-grow: 2;
+  transform: translateY(5px);
 }
 
 .infocard:last-child .infodescription a{
@@ -290,6 +271,7 @@ main{
   background-color: rgba(30, 90, 142, 0.9);
   height: 20rem;
   margin: 1rem 0;
+  transition: all 500ms linear 300ms;
 }
 
 .coursedescription img{
@@ -300,6 +282,7 @@ main{
 
 .areas{
   padding: 1rem 0 2rem 1rem;
+  transition: color 500ms linear 300ms;
 }
 .areas p:nth-child(2n+2){
   margin: 0.5rem 0;
@@ -307,7 +290,81 @@ main{
 }
 .areas h3{
   font-size: 1.5rem;
+  color: rgba( 242, 183, 5);
 }
 .areas p{
   font-size: 1rem;
+}
+.areas a{
+  text-decoration: none;
+}
+
+/* Animation Course Section */
+.coursedescription:hover{
+  background-color:rgba( 242, 183, 5, 0.3);
+  transform: translateY(10px);
+}
+
+/*Thesis Section */
+.thesis{
+  padding: 2rem 0;
+}
+.thesis h2{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.thesis-section{
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  margin: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.video{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 0.75rem;
+}
+
+.thesis-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  margin-left: 0.75rem;
+}
+/* Footer Section */
+footer{
+  border-top: 0.5px solid rgba(30, 90, 142, 0.6);
+  padding: 2rem 1rem;
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socialmedia{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.socialicon{
+  width: 1rem;
+  height:auto;
+  margin-left: 0.5rem;
+  transition: all 500ms linear;
+}
+
+.terms a{
+  text-decoration: none;
+  font-family: "Signika Negative", helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.socialicon:active{
+  transform: translateY(5px);
 }

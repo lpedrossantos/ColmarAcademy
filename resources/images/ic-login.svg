@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <style xmlns="http://www.w3.org/2000/svg" type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(255, 255, 255);}
+</style>
     <title>ic_login</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -19,7 +22,7 @@
             <g id="nav">
                 <g id="Group-6" filter="url(#filter-1)">
                     <g id="ic_login" transform="translate(287.000000, 21.000000)">
-                        <path d="M8,0 C10.209139,0 12,1.790861 12,4 C12,6.209139 10.209139,8 8,8 C5.790861,8 4,6.209139 4,4 C4,1.790861 5.790861,0 8,0 L8,0 Z M8,10 C12.42,10 16,11.79 16,14 L16,16 L0,16 L0,14 C0,11.79 3.58,10 8,10 Z" id="Shape"></path>
+                        <path class="st0" d="M8,0 C10.209139,0 12,1.790861 12,4 C12,6.209139 10.209139,8 8,8 C5.790861,8 4,6.209139 4,4 C4,1.790861 5.790861,0 8,0 L8,0 Z M8,10 C12.42,10 16,11.79 16,14 L16,16 L0,16 L0,14 C0,11.79 3.58,10 8,10 Z" id="Shape"></path>
                     </g>
                 </g>
             </g>
