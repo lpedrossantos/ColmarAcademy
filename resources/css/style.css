@@ -275,7 +275,7 @@ main{
   transition: all 300ms linear;
 }
 
-section .infomobile{
+section.infomobile{
   display: none;
 }
 
