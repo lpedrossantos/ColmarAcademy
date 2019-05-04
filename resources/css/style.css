@@ -5,6 +5,28 @@ html{
 *, *:before, *:after {
   box-sizing: inherit;
 }
+h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba( 242, 183, 5, 0.5);
+  margin-bottom: 2rem;
+}
+h3{
+  font-size: 2rem;
+  font-weight: lighter;
+  color: rgba( 242, 183, 5, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+p{
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 0.10rem;
+  color: rgba(0, 0, 0, 0.7)
+}
+h2,h3,p,a{
+  font-family: "Signika Negative", Helvetica, sans-serif;
+}
 
 .container{
   width: 1400px;
@@ -106,7 +128,6 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .imgbanner{
@@ -117,24 +138,7 @@ html{
 .description{
   line-height: 1.4;
   margin-left: 1.5rem;
-  font-family: 'Signika Negative', sans-serif;
-
 }
-
-.description h2{
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: rgba( 242, 183, 5, 0.5);
-  margin-bottom: 2rem;
-}
-
-.description h3{
-  font-size: 2rem;
-  font-weight: lighter;
-  color: rgba( 242, 183, 5, 0.5);
-  margin-bottom: 1.5rem;
-}
-
 .description button{
   background-color: rgb(30, 90, 142);
   color: rgb(255, 255, 255);
@@ -142,8 +146,8 @@ html{
   border: none;
   font-size: 1.5rem;
   padding: 0.5rem 0;
-  transition: backgroud-color 500ms ease-in, font-size 200ms ease-in, border-radius 200ms linear;
-  transition: backgroud-color 500ms ease-in, font-size 200ms ease-in, border-radius 200ms linear, border 100ms ease-out;
+  transition: all 500ms ease-in;
+  font-family: "Signika", Helvetica, sans-serif;
 }
 /*Animation when the user hover with the mouse */
 .description button:hover{
@@ -153,10 +157,9 @@ html{
 }
 /*Animation when the user click with the mouse*/
 .description button:active{
-  background-color: rgba( 242, 183, 5, 0.5);
+  background-color: rgba(12, 29, 64, 0.9);
   font-size: 1.75rem;
   border-radius: 0.20rem;
-  border: 0.5px solid rgb(30, 90, 142);
 }
 /*Media Query for Banner Section Mobile */
 @media only screen and (max-width: 470px){
@@ -185,7 +188,7 @@ main{
 .info{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
   padding: 2rem 0 2rem 1.5rem;
 }
 
@@ -193,9 +196,8 @@ main{
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  font-family: "Signika Negative", sans-serif;
 }
 
 .infomain img{
@@ -203,27 +205,28 @@ main{
   height: auto;
 }
 
-.infomain h2{
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: rgba( 242, 183, 5, 0.5);
-  margin-bottom: 2rem;
+.infomain p:last-child{
+  font-size: 1rem;
+  font-weight: lighter;
+  opacity: 0.7;
+  margin-top: 1rem;
 }
-
-
 .facilities{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 40%;
+  margin-left: 1.5rem;
 }
 
 .infocard{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(242, 245, 243);
+  transition: all 500ms ease-in;
+  padding: 0.5rem;
 }
-
 .infocard img{
   width:35%;
   height: auto;
@@ -232,4 +235,43 @@ main{
 .infodescription{
   width: 65%;
   height: auto;
+  padding: 0.5rem;
+}
+.infodescription p:first-child{
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.infodescription a{
+  text-decoration: none;
+  color: rgba( 242, 183, 5, 0.85);
+  transition: all 300ms linear;
+
+}
+/* Animation for the info cards */
+.infocard:hover{
+  background-color: rgb(30, 90, 142);
+  flex-grow: 2;
+}
+.infodescription a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*Animation for last info card*/
+.infocard:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba( 242, 183, 5, 0.5);
+  transition: all 500ms linear 350ms;
+  padding: 0.5rem;
+}
+
+.infocard:hover:last-child{
+  background-color: rgba( 242, 183, 5, 0.85);
+  flex-grow: 2;
+}
+
+.infocard:last-child .infodescription a{
+  color: rgb(30, 90, 142);
+  transition: all 300ms linear;
 }
