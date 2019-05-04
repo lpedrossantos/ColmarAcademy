@@ -99,22 +99,6 @@ h2,h3,p,a{
 .mobile{
   display: none;
 }
-/* Media Query Nav Mobile*/
-@media only screen and (max-width: 470px){
-  .headline{
-    width: 100%;
-    background-color: rgb(30, 90, 142);
-    padding: 0 1.5rem;
-  }
-  .mobile{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo, .logo-colmar, .navigation{
-    display: none;
-  }
-}
 /*Banner Section */
 .banner{
   padding: 2rem 1.5rem;
@@ -277,46 +261,4 @@ main{
 
 .infomobile{
   display: none;
-}
-
-/*Media Query Mobile for info section */
-@media only screen and (max-width: 470px){
-.info{
-  display: none;
-}
-.infomobile{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0 2rem 1rem;
-  margin-top: 4rem;
-}
-.infocard{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: rgb(255, 255, 255)
-}
-.infocard:last-child{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.infocard img{
-  width: 100%;
-  height: auto;
-}
-.infodescription{
-  width: 100%;
-}
-.infodescription p{
-  font-size: 0.75rem;
-}
-.infodescription p:first-child{
-  padding-left: 1rem;
-  font-size: 1rem;
-}
 }
