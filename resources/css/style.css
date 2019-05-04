@@ -281,9 +281,6 @@ main{
 
 /*Media Query Mobile for info section */
 @media only screen and (max-width: 470px){
-main{
-  display: none;
-}
 .infomobile{
   display: flex;
   flex-direction: column;
