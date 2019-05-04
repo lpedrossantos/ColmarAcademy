@@ -262,3 +262,52 @@ main{
 .infomobile{
   display: none;
 }
+
+/*Courses Section */
+.learning{
+  background-color: rgb(242, 245, 243);
+  padding: 2rem 4.5rem;
+}
+.learning h2{
+  text-align: center;
+}
+.courses{
+  display: flex;
+  justify-content: center;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 25rem;
+  height: auto;
+  overflow: hidden;
+}
+
+.coursedescription{
+  background-color: rgba(30, 90, 142, 0.9);
+  height: 20rem;
+  margin: 1rem 0;
+}
+
+.coursedescription img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.areas{
+  padding: 1rem 0 2rem 1rem;
+}
+.areas p:nth-child(2n+2){
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+.areas h3{
+  font-size: 1.5rem;
+}
+.areas p{
+  font-size: 1rem;
+}
