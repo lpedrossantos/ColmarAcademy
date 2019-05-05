@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="resources/css/media.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Signika+Negative|Signika" rel="stylesheet">
     <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   </head>
   <body>
     <!-- Header section -->
     <header>
-      <nav class="headline">
-        <div class="container">
+      <nav class="headline" role="presentation">
+        <div class="container" role="presentation">
           <div class="logo">
             <a href="#"><img src="resources/images/ic-logo.svg" alt="logo Colmar Academy"></a>
             <div class="logo-colmar">
@@ -29,7 +30,7 @@
             <li><a href="#">Sign in</a></li>
           </ul>
     <!--Mobile Navbar Section -->
-          <div class="mobile">
+          <div class="mobile" role="presentation">
             <div class="icons">
               <a href="#"><img src="resources/images/ic-logo.svg" alt="logo Colmar Academy"></a>
               <a href="#"><img src="resources/images/ic-on-campus.svg" alt="campus logo"></a>
@@ -39,7 +40,7 @@
         </div>
       </nav>
     <!-- Banner Section -->
-      <div class="banner">
+      <div class="banner" role="presentation">
         <div class="container">
           <img src="resources/images/banner.jpg" alt="students study" class="imgbanner">
           <div class="description">
@@ -51,15 +52,15 @@
       </div>
     </header>
   <!-- Beggining of the Main Section -->
-    <main id="info">
-      <div class="info">
+    <main id="info" role="presentation">
+      <div class="info" role="presentation">
         <div class="infomain">
           <img src="resources/images/information-main.jpg" alt="student reading a course book">
           <h2>It doesn't hurt to keep practicing</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, eficitur dolor consequat, tristique ligula."</p>
           <p>Emanuel, Sr Strategist at Hiring.com</p>
         </div>
-        <div class="facilities">
+        <div class="facilities" role="presentation">
           <div class="infocard">
             <img src="resources/images/information-orientation.jpg" alt="students walking to the Colmar Academy">
             <div class="infodescription">
@@ -87,8 +88,8 @@
         </div>
       </div>
       <!-- Main Mobile Section -->
-      <div class="infomobile">
-        <div class="container">
+      <div class="infomobile" role="presentation">
+        <div class="container" role="presentation">
           <div class="infocard">
             <img src="resources/images/information-orientation-mobile.jpg" alt="students walking to the Colmar Academy">
             <div class="infodescription">
@@ -116,7 +117,7 @@
         </div>
       </div>
   <!-- Course and learning section -->
-    <div class="learning">
+    <div class="learning" role="presentation">
       <div class="container">
         <h2>Start Learning</h2>
         <div class="courses">
@@ -138,7 +139,7 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div class="column" role="presentation">
             <div class="coursedescription">
               <img src="resources/images/course-computer-art.jpg" alt="smarthphone">
               <div class="areas">
@@ -156,7 +157,7 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div class="column" role="presentation">
             <div class="coursedescription">
               <img src="resources/images/course-design.jpg" alt="film camera">
               <div class="areas">
@@ -178,13 +179,13 @@
       </div>
     </div>
   <!--Thesis Section-->
-    <div class="thesis">
+    <div class="thesis" role="presentation">
       <div class="container">
         <h2>Thesis exhibit</h2>
-        <div class="thesis-section">
-          <div class="thesis-video">
+        <div class="thesis-section" role="presentation">
+          <div class="thesis-video" role="presentation">
             <div class="video">
-              <video src="resources/videos/thesis.mp4" width="100%" height="auto"controls autoplay muted loop>Video Not Supported</video>
+              <video src="resources/videos/thesis.mp4" width="100%" height="auto"controls autoplay muted loop aria-label="video of a building">Video Not Supported</video>
             </div>
             <div class="video-descripiton">
               <h2>Reimagine urban</h2>
@@ -212,14 +213,19 @@
     </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container" role="presentation">
         <div class="copyrights">
           <p>© 2019 Colmar Academy. All rights reserved</p>
         </div>
         <div class="socialmedia">
-          <a href="https://www.facebook.com/" target="_blank"><img src="resources/images/facebook-icon.svg" alt="facebook icon" class="socialicon"></a>
-          <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="resources/images/instagram-icon.svg" alt="instagram icon" class="socialicon"></a>
-          <a href="https://pt.linkedin.com/" target="_blank"><img src="resources/images/linkedin-icon.svg" alt="linkedin icon" class="socialicon"></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class=" fa fa-facebook fa-lg"></i></a>
+          <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+          <a href="https://pt.linkedin.com/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+        </div>
+        <div class="socialmedia-mobile">
+          <a href="https://www.facebook.com/" target="_blank"><i class=" fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://pt.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
         </div>
         <div class="terms">
           <a href="#">Terms</a>

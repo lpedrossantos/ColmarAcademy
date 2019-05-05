@@ -363,9 +363,8 @@ footer .container{
   justify-content: space-around;
   align-items: center;
 }
-.socialicon{
-  width: 1.2rem;
-  height:auto;
+i{
+  color: rgba(30, 90, 142, 0.8);
   margin-left: 0.5rem;
   transition: all 500ms linear;
 }
@@ -381,6 +380,7 @@ footer .container{
 .terms a:hover{
   color: rgba(242, 183, 5, 0.9);
 }
-.socialicon:active{
+i:active{
   transform: translateY(5px);
+  color: rgba(242, 183, 5, 0.9);
 }

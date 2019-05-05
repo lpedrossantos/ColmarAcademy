@@ -183,4 +183,8 @@
 .socialmedia, .terms{
   display: none;
 }
+.socialmedia-mobile{
+  display: flex;
+
+}
 }
