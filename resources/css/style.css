@@ -367,7 +367,7 @@ footer .container{
 }
 
 .terms a:hover{
-  color: rgb(242, 183, 5);
+  color: rgba(242, 183, 5, 0.9);
 }
 .socialicon:active{
   transform: translateY(5px);
