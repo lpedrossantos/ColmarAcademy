@@ -2,13 +2,13 @@
   h2{
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgba( 242, 183, 5, 0.5);
+    color: rgba( 242, 183, 5, 0.9);
     margin-bottom: 1rem;
   }
   h3{
     font-size: 1rem;
     font-weight: lighter;
-    color: rgba( 242, 183, 5, 0.5);
+    color: rgba( 242, 183, 5, 0.9);
     margin-bottom: 0.5rem;
   }
 
@@ -136,11 +136,18 @@
     width: 100%;
     margin-bottom: 0.5rem;
     margin-top: 0;
+    background-color: rgba(60, 120, 172, 0.55);
   }
 
-  .coursedescription:nth-child(2n+2){
-    background-color: rgba( 242, 183, 5, 0.3);
+  .coursedescription:nth-child(2n + 2){
+    background-color: rgba( 60, 100, 142, 0.3);
   }
+
+  .coursedescription:hover{
+    background-color: rgba(242, 183, 5, 0.5);
+    transform: translate3d(5px,5px,10px);
+  }
+
 .courses{
   display: flex;
   flex-direction: column;
@@ -149,6 +156,7 @@
 }
 .areas h3{
   font-size: 1rem;
+  color: rgb(30, 90, 142);
 }
 .areas p{
   display: none;
@@ -162,12 +170,13 @@
 .thesis-section{
   margin: 0;
 }
-.video{
+.thesis-video{
   width:100%;
   margin: 0;
+  padding: 0;
 }
 
-.video p, .video h2, .thesis-description{
+.video-descripiton, .thesis-description{
   display: none;
 }
 /*footer section */

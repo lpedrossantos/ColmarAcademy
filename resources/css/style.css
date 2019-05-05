@@ -8,13 +8,13 @@ html{
 h2{
   font-size: 2.5rem;
   font-weight: bold;
-  color: rgba( 242, 183, 5, 0.5);
+  color: rgba( 242, 183, 5, 0.8);
   margin-bottom: 2rem;
 }
 h3{
   font-size: 2rem;
   font-weight: lighter;
-  color: rgba( 242, 183, 5, 0.5);
+  color: rgba( 242, 183, 5, 0.8);
   margin-bottom: 1.5rem;
 }
 
@@ -117,11 +117,12 @@ h2,h3,p,a{
 .imgbanner{
   height: auto;
   width: 60%;
+  margin-right: 0.75rem;
 
 }
 .description{
   line-height: 1.4;
-  margin-left: 1.5rem;
+  margin-left: 0.75rem;
 }
 .description button{
   background-color: rgb(30, 90, 142);
@@ -168,6 +169,10 @@ main{
 .infomain img{
   max-width: 100%;
   height: auto;
+}
+.infomain h2{
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .infomain p:last-child{
@@ -262,7 +267,7 @@ main{
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  width: 25rem;
+  width: 20rem;
   height: auto;
   overflow: hidden;
 }
@@ -281,7 +286,7 @@ main{
 }
 
 .areas{
-  padding: 1rem 0 2rem 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   transition: color 500ms linear 300ms;
 }
 .areas p:nth-child(2n+2){
@@ -317,24 +322,31 @@ main{
   display: flex;
   justify-content: center;
   align-items: space-between;
-  margin: 1rem 1.5rem 1.5rem 1.5rem;
+  margin: 1rem 1.5rem 0 1.5rem;;
 }
 
-.video{
+.thesis-video{
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin-right: 0.75rem;
+  padding: 0 1.5rem;
 }
 
+.video{
+  margin-bottom: 1.5rem;
+}
+
+.video-descripiton h2{
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
 .thesis-description{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 40%;
-  margin-left: 0.75rem;
 }
 /* Footer Section */
 footer{
