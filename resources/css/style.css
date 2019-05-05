@@ -363,6 +363,9 @@ footer .container{
   justify-content: space-around;
   align-items: center;
 }
+.socialmedia-mobile{
+  display: none;
+}
 i{
   color: rgba(30, 90, 142, 0.8);
   margin-left: 0.5rem;
