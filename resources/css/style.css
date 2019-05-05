@@ -374,7 +374,7 @@ i{
 
 .terms a{
   text-decoration: none;
-  font-family: "Signika Negative", helvetica, sans-serif;
+  font-family: "Signika Negative", Helvetica, sans-serif;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.7);
   transition: color 500ms linear;
