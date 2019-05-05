@@ -379,7 +379,7 @@ i{
   color: rgba(0, 0, 0, 0.7);
   transition: color 500ms linear;
 }
-
+/*Animation for footer */
 .terms a:hover{
   color: rgba(242, 183, 5, 0.9);
 }
